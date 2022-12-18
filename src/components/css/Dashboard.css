@@ -1,3 +1,4 @@
+/* new items */
 .new-items {
     background-color: white;
     margin: 3%;
@@ -21,3 +22,66 @@
 #new-items-version {
     margin: .5%
 }
+
+/* quick stats */
+.quick-stats {
+    background-color: white;
+    margin: 3%;
+    border: 2px solid var(--darkBlue);
+    border-radius: 10px;
+}
+
+.quick-stat-display {
+    display: block
+}
+
+h2 {
+    margin: 1%;
+}
+
+.progress-bar {
+    justify-content: stretch;
+    width: 70%;
+    padding: 1%;
+}
+
+h4 {
+    margin: 1%;
+}
+
+.crafting-progress-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.clothing-progress-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.furniture-progress-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#crafting-progress-bar {
+    margin: 1%;
+    border-radius: 20px;
+}
+
+#clothing-progress-bar {
+    margin: 1%;
+    border-radius: 20px;
+}
+
+#furniture-progress-bar {
+    margin: 1%;
+    border-radius: 20px;
+}
+
+
+

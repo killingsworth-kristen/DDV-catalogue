@@ -13,15 +13,17 @@ h1 {
 }
 
 #header-search-input {
-    height: fit-content;
+    height: 32px;
     width: 40vw;
+    padding: 1rem;
     margin: 2rem;
     font-size: 16px;
+    border-radius: 25px;
 }
 
 #header-search-btn {
-    height: fit-content;
-    margin: 1.5rem;
+    height: 32px;
+    margin: 2rem;
     border: solid 1px;
     color: white;
 }
