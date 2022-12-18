@@ -18,6 +18,7 @@ export default function Dashboard () {
                     <Card/>
                     <Card/>
                 </div>
+                <a id="see-all-new-item" href='/browse/?added=1.2'>See all</a>
             </section>
             <section className='quick-stats'>
                 <div className='quick-stat-display'>

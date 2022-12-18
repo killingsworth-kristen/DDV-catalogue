@@ -16,11 +16,21 @@
 }
 
 #new-items-h4 {
-    padding: 1%
+    padding: 1% 0 1% 1%;
+    font-size: 24px;
 }
 
 #new-items-version {
-    margin: .5%
+    font-size: 16px;
+    margin: 2% 0 2% 0;
+}
+
+#see-all-new-item {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+    margin: 2%;
+    text-decoration: none;
 }
 
 /* quick stats */
