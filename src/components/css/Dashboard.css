@@ -1,0 +1,23 @@
+.new-items {
+    background-color: white;
+    margin: 3%;
+    border: 2px solid var(--darkBlue);
+    border-radius: 10px;
+}
+
+.card-title-new-items {
+    display: flex;
+}
+
+.new-item-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#new-items-h4 {
+    padding: 1%
+}
+
+#new-items-version {
+    margin: .5%
+}

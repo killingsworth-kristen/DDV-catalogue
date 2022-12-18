@@ -1,0 +1,12 @@
+.card-container {
+    background-color: white;
+    margin: 3%;
+    border: 2px solid var(--darkBlue);
+    border-radius: 10px;
+    width: 15%;
+    padding-bottom: 10%;
+}
+
+p {
+    padding: 5%;
+}

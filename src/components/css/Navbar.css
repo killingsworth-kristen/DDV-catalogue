@@ -1,0 +1,12 @@
+.navbar-container {
+    background-color: var(--darkBlue); 
+}
+
+.tabs {
+    color: var(--lightGold);
+}
+
+hr {
+    background-image: linear-gradient(to right, var(--lightGold) , var(--darkGold));
+    height: 5px;
+}

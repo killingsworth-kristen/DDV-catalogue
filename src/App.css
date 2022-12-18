@@ -12,3 +12,7 @@
     font-family: Poppins;
 }
 
+body {
+    background-image: url("./assets/background.jpg");
+}
+
