@@ -1,0 +1,31 @@
+h1 {
+    margin: 1.5rem;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    background-color: var(--lighterBlue);
+}
+
+.header-form {
+    display: flex;
+}
+
+#header-search-input {
+    height: fit-content;
+    width: 40vw;
+    margin: 2rem;
+    font-size: 16px;
+}
+
+#header-search-btn {
+    height: fit-content;
+    margin: 1.5rem;
+    border: solid 1px;
+    color: white;
+}
+
+#hamburger-menu {
+    color: white;
+}
