@@ -1,9 +1,27 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Chip, LinearProgress } from '@mui/material';
-import Card from './../Card';
+import NewItemsCard from '../NewItemsCard';
 import './../css/Dashboard.css';
+import API from './../../utils/API';
 
-export default function Dashboard () {
+export default function Dashboard ({furnitureCollection, setFurnitureCollection}) {
+
+    const [newItems, setNewItems] = useState([])
+
+    useEffect(() => {
+        API.getAllNewFurniture().then((data)=>{
+            const newData = data.slice(0, 5)
+            setNewItems(newData)
+        });
+      },[]);
+
+    let collectedFurniture = 0;
+
+    function handleFurnitureProgress () {
+        collectedFurniture = localStorage.getItem('furnitureCollection').length;
+        const progressPercentage = collectedFurniture/964
+        return progressPercentage
+    }
     return (
         <div className='dashboard-container'>
             <section className='new-items'>
@@ -12,11 +30,20 @@ export default function Dashboard () {
                     <Chip id='new-items-version'label="v 1.2"/>
                 </div>
                 <div className='new-item-cards'>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    {newItems.map((item, index)=> 
+                        <NewItemsCard 
+                            key={item._id} 
+                            id={item._id}
+                            furnitureName={item.furnitureName} 
+                            price={item.price} 
+                            obtainedBy={item.obtainedBy} 
+                            style={item.style} 
+                            furnitureCategory={item.furnitureCategory} 
+                            universe={item.universe}
+                            furnitureCollection={furnitureCollection}
+                            setFurnitureCollection={setFurnitureCollection}
+                        />
+                    ) }
                 </div>
                 <a id="see-all-new-item" href='/browse/?added=1.2'>See all</a>
             </section>
@@ -35,8 +62,8 @@ export default function Dashboard () {
                     </div>
                     <div className='furniture-progress-container'>
                         <h4>Furniture:</h4> 
-                        <LinearProgress className="progress-bar" id="furniture-progress-bar" variant="determinate" value="90" />
-                        <h4>X/Total</h4>
+                        <LinearProgress className="progress-bar" id="furniture-progress-bar" variant="determinate" value={handleFurnitureProgress} />
+                        <h4>{collectedFurniture}/968</h4>
                     </div>
                 </div>
             </section>

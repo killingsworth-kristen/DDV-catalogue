@@ -1,6 +1,6 @@
 /* new items */
 .new-items {
-    background-color: white;
+    background-color: #ccceffe8;
     margin: 3%;
     border: 2px solid var(--darkBlue);
     border-radius: 10px;
@@ -23,11 +23,12 @@
 #new-items-version {
     font-size: 16px;
     margin: 2% 0 2% 0;
+    background-color:  #e6dfdf;
 }
 
 #see-all-new-item {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0;
     margin: 2%;
     text-decoration: none;

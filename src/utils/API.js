@@ -3,16 +3,19 @@ const URL_PREFIX = "http://localhost:3001"
 // in prod mode
 // const URL_PREFIX= "https://codescaper.herokuapp.com"
 
+const newItems = "added=1.2"
+
 const API = {
-    getAllFurniture: () => {
+    getAllNewFurniture: () => {
         return (
-            fetch(`${URL_PREFIX}/api/furniture`),{
-                method: "GET",
-                headers: {
-                    "Content-Type": "application/json"
-                }
-            }).then(res => res.json())
-        },
+            fetch(`${URL_PREFIX}/api/furniture/?${newItems}`)
+            .then((res)=>{
+                const data = res.json()
+                console.log(data)
+                return data
+            })
+        )
+    },
     
     // getAllClothing
     // getAllCrafting
@@ -20,4 +23,6 @@ const API = {
     // getOneFurniture?
     // getOneClothing?
     // getOneCrafting? 
-    }
+}
+
+export default API

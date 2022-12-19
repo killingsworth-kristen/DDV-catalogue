@@ -9,10 +9,10 @@ export default function Navbar () {
             {/* <Divider className='navbar-divider' sx={{}}/> */}
             <section className='navbar-tabs-container'>
                 <Tabs>
-                    <Tab className='tabs' label="Dashboard" sx={{color: "white"}}/>
-                    <Tab className='tabs' label="Browse" sx={{color: "white"}}/>
-                    <Tab className='tabs' label="Stats" sx={{color: "white"}}/>
-                    <Tab className='tabs' label="Lists" sx={{color: "white"}}/>
+                    <Tab className='tabs' value={0} label="Dashboard" sx={{color: "white"}}/>
+                    <Tab className='tabs' value={1} label="Browse" sx={{color: "white"}}/>
+                    <Tab className='tabs' value={2} label="Stats" sx={{color: "white"}}/>
+                    <Tab className='tabs' value={3} label="Lists" sx={{color: "white"}}/>
                 </Tabs>
                 {/* show first 5 new items */}
                 {/* TODO: <Component/> */}

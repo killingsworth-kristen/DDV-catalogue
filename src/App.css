@@ -16,3 +16,7 @@ body {
     background-image: url("./assets/background.jpg");
 }
 
+.hidden {
+    display: none;
+}
+
