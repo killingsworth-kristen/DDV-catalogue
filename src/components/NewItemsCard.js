@@ -7,7 +7,7 @@ import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
 import LibraryAddCheckIcon from '@mui/icons-material/LibraryAddCheck';
 
-export default function Card ({furnitureName, price, obtainedBy, style, furnitureCategory, universe, id, setFurnitureCollection, furnitureCollection}) {
+export default function Card ({furnitureName, price, obtainedBy, style, furnitureCategory, universe, id, setFurnitureCollection, furnitureCollection, image}) {
 
     function handleAddCollection (e) {
         const itemId = e.target.id.split('-')[1]
@@ -26,12 +26,13 @@ export default function Card ({furnitureName, price, obtainedBy, style, furnitur
         const itemId = e.target.id.split('-')[1]
         console.log(itemId)
     }
+
     return (
         <div className="card-container">
             <h4 className="new-items-title">{furnitureName}</h4>
             <div className="new-items-img-uni">
                 <p className="new-items-universe-banner">{universe}</p>
-                <img src="http://placekitten.com/100/100"/>
+                <img src={image} alt={furnitureName}/>
             </div>
             <div className="new-item-actions">
                 <LibraryAddIcon onClick={handleAddCollection} id={`collection-${id}`} className="library-add furniture"/>

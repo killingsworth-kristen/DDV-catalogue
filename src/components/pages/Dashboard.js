@@ -37,6 +37,7 @@ export default function Dashboard ({furnitureCollection, setFurnitureCollection}
                             furnitureName={item.furnitureName} 
                             price={item.price} 
                             obtainedBy={item.obtainedBy} 
+                            image={item.image}
                             style={item.style} 
                             furnitureCategory={item.furnitureCategory} 
                             universe={item.universe}

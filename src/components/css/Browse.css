@@ -1,0 +1,64 @@
+.browse-conatainer {
+    display: flex;
+}
+
+.browse-filter-container {
+    width: fit-content;
+    background-color: white;
+    height: fit-content;
+    margin: 2rem;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.browse-right-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 0%;
+}
+
+.broswe-form-container {
+    flex: 1 1 auto;
+    max-width: 100%;
+    min-width: 40%;
+    height: 0%;
+}
+
+.browse-form {
+    display: flex;
+    align-items: center;
+}
+
+.browse-search-results {
+    flex: 1 1 auto;
+    width: 100%;
+    margin: 0 2rem 2rem 0;
+}
+
+.browse-item-cards {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    margin: 0 2rem 2rem 0;
+    border-radius: 25px;
+}
+
+#browse-search-input {
+    flex-grow: 2;
+    justify-content: stretch;
+    height: 32px;
+    max-width: 60vw;
+    padding: 24px;
+    margin: 2rem;
+    font-size: 1.17em;
+    border-radius: 25px;
+}
+
+#browse-search-btn {
+    height: 32px;
+    margin: 2rem;
+    font-size: 1.17em;
+    border: solid 1px;
+    color: white;
+}

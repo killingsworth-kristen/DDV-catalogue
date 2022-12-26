@@ -8,12 +8,6 @@ export default function Header () {
     return (
         <div className='header-container'>
             <h1>Disney Dreamlight Valley Catalogue</h1>
-            <section className='header-form'>
-                <form className='header-form'>
-                    <input id="header-search-input" type="text" placeholder='search'/>
-                    <Button id="header-search-btn">Search</Button>
-                </form>
-            </section>
             <Button>
                 <MenuIcon id="hamburger-menu"/>
             </Button>
