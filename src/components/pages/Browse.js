@@ -51,30 +51,30 @@ export default function Browse () {
                         </AccordionSummary>
                         <AccordionDetails>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox/>} label="Mickey & Friends" />
-                                <FormControlLabel control={<Checkbox/>} label="The Sword in the Stone" />
-                                <FormControlLabel control={<Checkbox/>} label="WALL-E" />
-                                <FormControlLabel control={<Checkbox/>} label="Moana" />
-                                <FormControlLabel control={<Checkbox/>} label="Ratatouille" />
-                                <FormControlLabel control={<Checkbox/>} label="Beauty and the Beast" />
-                                <FormControlLabel control={<Checkbox/>} label="Wreck-It Raplph" />
-                                <FormControlLabel control={<Checkbox/>} label="Cinderella" />
-                                <FormControlLabel control={<Checkbox/>} label="The Lion King" />
-                                <FormControlLabel control={<Checkbox/>} label="The Little Mermaid" />
-                                <FormControlLabel control={<Checkbox/>} label="Frozen" />
-                                <FormControlLabel control={<Checkbox/>} label="Tangled" />
-                                <FormControlLabel control={<Checkbox/>} label="Monsters, Inc." />
-                                <FormControlLabel control={<Checkbox/>} label="Toy Story" />
-                                <FormControlLabel control={<Checkbox/>} label="Lilo & Stitch" />
-                                <FormControlLabel control={<Checkbox/>} label="The Incredibles" />
-                                <FormControlLabel control={<Checkbox/>} label="Hercules" />
-                                <FormControlLabel control={<Checkbox/>} label="Coco" />
-                                <FormControlLabel control={<Checkbox/>} label="Cars" />
-                                <FormControlLabel control={<Checkbox/>} label="Lightyear" />
-                                <FormControlLabel control={<Checkbox/>} label="Up" />
-                                <FormControlLabel control={<Checkbox/>} label="Sleeping Beauty" />
-                                <FormControlLabel control={<Checkbox/>} label="Snow White" />
-                                <FormControlLabel control={<Checkbox/>} label="General" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Mickey & Friends" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="The Sword in the Stone" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="WALL-E" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Moana" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Ratatouille" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Beauty and the Beast" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Wreck-It Raplph" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Cinderella" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="The Lion King" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="The Little Mermaid" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Frozen" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Tangled" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Monsters, Inc." />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Toy Story" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Lilo & Stitch" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="The Incredibles" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Hercules" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Coco" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Cars" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Lightyear" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Up" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Sleeping Beauty" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="Snow White" />
+                                <FormControlLabel control={<Checkbox sx={{color: '#3F48AC'}}/>} label="General" />
                             </FormGroup>
                         </AccordionDetails>
                     </Accordion>
@@ -88,27 +88,27 @@ export default function Browse () {
                         </AccordionSummary>
                         <AccordionDetails>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox/>} label="Essentials" />
-                                <FormControlLabel control={<Checkbox/>} label="Decor" />
-                                <FormControlLabel control={<Checkbox/>} label="Trimmings" />
-                                <FormControlLabel control={<Checkbox/>} label="Tables" />
-                                <FormControlLabel control={<Checkbox/>} label="Beds" />
-                                <FormControlLabel control={<Checkbox/>} label="Seating" />
-                                <FormControlLabel control={<Checkbox/>} label="Storage" />
-                                <FormControlLabel control={<Checkbox/>} label="Appliance" />
-                                <FormControlLabel control={<Checkbox/>} label="Electronics" />
-                                <FormControlLabel control={<Checkbox/>} label="Utilities" />
-                                <FormControlLabel control={<Checkbox/>} label="Art" />
-                                <FormControlLabel control={<Checkbox/>} label="Lighting" />
-                                <FormControlLabel control={<Checkbox/>} label="Foliage" />
-                                <FormControlLabel control={<Checkbox/>} label="Rugs" />
-                                <FormControlLabel control={<Checkbox/>} label="Misc." />
-                                <FormControlLabel control={<Checkbox/>} label="Wallpaper" />
-                                <FormControlLabel control={<Checkbox/>} label="Floors" />
-                                <FormControlLabel control={<Checkbox/>} label="Doors" />
-                                <FormControlLabel control={<Checkbox/>} label="Windows" />
-                                <FormControlLabel control={<Checkbox/>} label="Wall" />
-                                <FormControlLabel control={<Checkbox/>} label="Ceiling" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Essentials"/>
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Decor" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Trimmings" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Tables" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Beds" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Seating" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Storage" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Appliance" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Electronics" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Utilities" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Art" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Lighting" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Foliage" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Rugs" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Misc." />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Wallpaper" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Floors" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Doors" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Windows" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Wall" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Ceiling" />
                             </FormGroup>
                         </AccordionDetails>
                     </Accordion>
@@ -122,14 +122,14 @@ export default function Browse () {
                         </AccordionSummary>
                         <AccordionDetails>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox/>} label="Bedroom" />
-                                <FormControlLabel control={<Checkbox/>} label="Bathroom" />
-                                <FormControlLabel control={<Checkbox/>} label="Living Room" />
-                                <FormControlLabel control={<Checkbox/>} label="Dining Room" />
-                                <FormControlLabel control={<Checkbox/>} label="Kitchen" />
-                                <FormControlLabel control={<Checkbox/>} label="Outdoors" />
-                                <FormControlLabel control={<Checkbox/>} label="Rec Room" />
-                                <FormControlLabel control={<Checkbox/>} label="Study" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Bedroom" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Bathroom" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Living Room" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Dining Room" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Kitchen" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Outdoors" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Rec Room" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Study" />
                             </FormGroup>
                         </AccordionDetails>
                     </Accordion>
@@ -143,17 +143,17 @@ export default function Browse () {
                         </AccordionSummary>
                         <AccordionDetails>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox/>} label="Bold" />
-                                <FormControlLabel control={<Checkbox/>} label="Casual" />
-                                <FormControlLabel control={<Checkbox/>} label="Cute" />
-                                <FormControlLabel control={<Checkbox/>} label="Elegant" />
-                                <FormControlLabel control={<Checkbox/>} label="Futuristic" />
-                                <FormControlLabel control={<Checkbox/>} label="Modern" />
-                                <FormControlLabel control={<Checkbox/>} label="Professional" />
-                                <FormControlLabel control={<Checkbox/>} label="Quirky" />
-                                <FormControlLabel control={<Checkbox/>} label="Rustic" />
-                                <FormControlLabel control={<Checkbox/>} label="Sporty" />
-                                <FormControlLabel control={<Checkbox/>} label="Traditional" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Bold" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Casual" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Cute" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Elegant" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Futuristic" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Modern" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Professional" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Quirky" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Rustic" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Sporty" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Traditional" />
                             </FormGroup>
                         </AccordionDetails>
                     </Accordion>
@@ -167,9 +167,9 @@ export default function Browse () {
                         </AccordionSummary>
                         <AccordionDetails>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox/>} label="1.0" />
-                                <FormControlLabel control={<Checkbox/>} label="1.1" />
-                                <FormControlLabel control={<Checkbox/>} label="1.2" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="1.0" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="1.1" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="1.2" />
                             </FormGroup>
                         </AccordionDetails>
                     </Accordion>
@@ -183,14 +183,14 @@ export default function Browse () {
                         </AccordionSummary>
                         <AccordionDetails>
                             <FormGroup>
-                                <FormControlLabel control={<Checkbox/>} label="Founder's Pack: Standard Edition" />
-                                <FormControlLabel control={<Checkbox/>} label="Founder's Pack: Deluxe Edition" />
-                                <FormControlLabel control={<Checkbox/>} label="Founder's Pack: Ultimate Edition" />
-                                <FormControlLabel control={<Checkbox/>} label="Friendship" />
-                                <FormControlLabel control={<Checkbox/>} label="Pixar Star Path" />
-                                <FormControlLabel control={<Checkbox/>} label="Villain's Star Path" />
-                                <FormControlLabel control={<Checkbox/>} label="Festive Star Path" />
-                                <FormControlLabel control={<Checkbox/>} label="Special Tasks" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Founder's Pack: Standard Edition" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Founder's Pack: Deluxe Edition" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Founder's Pack: Ultimate Edition" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Friendship" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Pixar Star Path" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Villain's Star Path" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Festive Star Path" />
+                                <FormControlLabel control={<Checkbox className='filter-checkbox' sx={{color: '#3F48AC'}}/>} label="Special Tasks" />
                             </FormGroup>
                         </AccordionDetails>
                     </Accordion>
@@ -198,6 +198,7 @@ export default function Browse () {
             <div className='browse-right-container'>
                 <div className='broswe-form-container'>
                     <form className='browse-form'>
+                        {/* TODO: make search work (needs functions/useState); queries multiple collections (not just furniture) */}
                         <input id="browse-search-input" type="text" placeholder='search'/>
                         <Button id="browse-search-btn">Search</Button>
                     </form>

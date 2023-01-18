@@ -15,11 +15,10 @@ export default function Dashboard ({furnitureCollection, setFurnitureCollection}
         });
       },[]);
 
-    let collectedFurniture = 0;
 
     function handleFurnitureProgress () {
-        collectedFurniture = localStorage.getItem('furnitureCollection').length;
-        const progressPercentage = collectedFurniture/964
+        setFurnitureCollection(localStorage.getItem('furnitureCollection'));
+        let progressPercentage = furnitureCollection.length / 964
         return progressPercentage
     }
     return (
@@ -51,6 +50,7 @@ export default function Dashboard ({furnitureCollection, setFurnitureCollection}
             <section className='quick-stats'>
                 <div className='quick-stat-display'>
                     <h2>Quick Stats</h2>
+                    {/* TODO: make quick stats actually use local storage to track overall progress; refresh doesn't clear local storage */}
                     <div className='crafting-progress-container'>
                         <h4>Crafting:</h4> 
                         <LinearProgress className="progress-bar" id="crafting-progress-bar" variant="determinate" value="10" />
@@ -63,8 +63,8 @@ export default function Dashboard ({furnitureCollection, setFurnitureCollection}
                     </div>
                     <div className='furniture-progress-container'>
                         <h4>Furniture:</h4> 
-                        <LinearProgress className="progress-bar" id="furniture-progress-bar" variant="determinate" value={handleFurnitureProgress} />
-                        <h4>{collectedFurniture}/968</h4>
+                        <LinearProgress className="progress-bar" id="furniture-progress-bar" variant="determinate" value={handleFurnitureProgress}/>
+                        <h4>{furnitureCollection.length}/968</h4>
                     </div>
                 </div>
             </section>

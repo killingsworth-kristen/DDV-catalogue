@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import './css/NewItemsCard.css'
 
 import { Chip, Button } from '@mui/material';
@@ -10,15 +10,19 @@ import LibraryAddCheckIcon from '@mui/icons-material/LibraryAddCheck';
 export default function Card ({furnitureName, price, obtainedBy, style, furnitureCategory, universe, id, setFurnitureCollection, furnitureCollection, image}) {
 
     function handleAddCollection (e) {
+        console.log("clicked add collection!")
         const itemId = e.target.id.split('-')[1]
         const oldCollection = JSON.parse(localStorage.getItem('furnitureCollection'))
         console.log(oldCollection)
         console.log(oldCollection.furnitureId)
         console.log(itemId)
-        // const newFurnitureCollection = oldCollection.furnitureId.push(itemId)
-        // console.log(newFurnitureCollection)
-        // setFurnitureCollection(newFurnitureCollection)
-        // localStorage.setItem('furnitureCollection', furnitureCollection)
+        if (!itemId) {
+            return;
+        }
+        const newFurnitureCollection = oldCollection.furnitureId.concat([itemId])
+        console.log(newFurnitureCollection)
+        setFurnitureCollection(newFurnitureCollection)
+        localStorage.setItem('furnitureCollection', furnitureCollection)
     }
 
     function handleAddList (e) {
@@ -35,6 +39,7 @@ export default function Card ({furnitureName, price, obtainedBy, style, furnitur
                 <img src={image} alt={furnitureName}/>
             </div>
             <div className="new-item-actions">
+                {/* TODO: make the display: none work with states/local storage */}
                 <LibraryAddIcon onClick={handleAddCollection} id={`collection-${id}`} className="library-add furniture"/>
                 <LibraryAddCheckIcon className="library-added furniture hidden"/>
                 <BookmarkAddIcon onClick={handleAddList} id={`list-${id}`}className="list-add furniture"/>
